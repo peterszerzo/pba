@@ -1,0 +1,8 @@
+script:
+  - chmod +x prod.sh
+  - ./prod.sh
+deploy:
+  skip_cleanup: true
+  provider: surge
+  project: ./dist/
+  domain: pba.peterszerzo.com
